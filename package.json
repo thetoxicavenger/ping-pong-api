@@ -6,6 +6,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^5.0.5",
     "dotenv": "^4.0.0",
     "es6-promise": "^4.1.1",
     "global": "^4.3.2",
@@ -23,7 +24,7 @@
     "react-fontawesome": "^1.6.1"
   },
   "scripts": {
-    "dev": "micro-dev -p 8080",
+    "dev": "cross-env NODE_ENV=dev micro-dev -p 8080",
     "start": "micro -p 8080"
   }
 }
